@@ -1,0 +1,177 @@
+:root {
+  --red: #f65351;
+  --blue: #0a317b;
+  --white: #ffffff;
+  --light-gray-blue-1: #e5effa;
+  --light-gray-blue-2: #dde7ee;
+  --light-gray-blue-3: #f7fafd;
+  --gray-blue: #939dae;
+  --dark-blue-1: #5e6778;
+  --dark-blue-2: #1c202b;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.dark {
+  color: var(--dark-blue-2);
+}
+
+.gray {
+  color: var(--dark-blue-1);
+}
+
+.light-gray {
+  color: var(--gray-blue);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+body {
+  background-color: var(--light-gray-blue-3);
+}
+
+main {
+  padding: 2rem;
+  max-width: 650px;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 3rem auto;
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-title h1 {
+  font-size: 1.5rem;
+}
+
+.header-title span {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-left: 0.25rem;
+}
+
+#mark {
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--dark-blue-1);
+}
+
+#mark:hover {
+  color: var(--blue);
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--white);
+}
+
+.notification:hover {
+  border-color: var(--light-gray-blue-2);
+  cursor: pointer;
+}
+
+.new {
+  background: var(--light-gray-blue-3);
+}
+
+.new .notification-text > p::after {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  display: inline-block;
+  background-color: var(--red);
+}
+
+.notification-image img,
+.notifications-picture img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.notification-text span:first-child {
+  margin-right: 0.25rem;
+}
+
+.message {
+  border: 1px solid var(--light-gray-blue-1);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: var(--dark-blue-1);
+}
+
+.notifications-picture {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: var(--white);
+  }
+
+  main {
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}

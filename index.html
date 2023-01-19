@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="header">
+      <div class="header-title">
+        <h1>Notifications <span id="counter">0</span></h1>
+      </div>
+      <h3 id="mark" class="fw-500">Mark all as read</h3>
+    </div>
+
+    <div class="notifications">
+      <div class="notification new">
+        <div class="notification-image">
+          <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+        </div>
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Mark Webber</span> reacted to your recent post <span
+              class="fw-600">My first
+              tournament today!</span></p>
+          <span class="light-gray">1m ago</span>
+        </div>
+      </div>
+
+      <div class="notification new">
+        <div class="notification-image">
+          <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+        </div>
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Angela Gray</span> followed you</p>
+          <span class="light-gray">5m ago</span>
+        </div>
+      </div>
+
+      <div class="notification new">
+        <div class="notification-image">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+        </div>
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Jacob Thompson</span> has joined your group <span
+              class="fw-600 blue">Chess Club</span></p>
+          <span class="light-gray">1 day ago</span>
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification-image">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+        </div>
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Rizky Hasanuddin</span> sent you a private message</p>
+          <span class="light-gray">5 days ago</span>
+          <div class="message">
+            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification-image">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+        </div>
+        <div class="notifications-picture">
+          <div class="notification-text">
+            <p class="gray"><span class="fw-800 dark">Kimberly Smith</span> commented on your picture</p>
+            <span class="light-gray">1 week ago</span>
+          </div>
+          <img src="assets/images/image-chess.webp" alt="Chess">
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification-image">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+        </div>
+
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Nathan Peterson</span> reacted to your recent post <span
+              class="fw-600">5 end-game
+              strategies to increase your win rate</span></p>
+          <span class="light-gray">2 weeks ago</span>
+        </div>
+
+      </div>
+
+      <div class="notification">
+        <div class="notification-image">
+          <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+        </div>
+        <div class="notification-text">
+          <p class="gray"><span class="fw-800 dark">Anna Kim</span> left the group <span class="fw-600 blue">Chess
+              Club</span></p>
+          <span class="light-gray">2 weeks ago</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/sqmatheus" target="_blank">sqmatheus</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
