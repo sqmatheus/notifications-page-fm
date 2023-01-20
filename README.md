@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [click here](https://sqmatheus.github.io/notifications-page-frontend-mentor)
+- Solution URL: [click here](https://sqmatheus.github.io/notifications-page-fm)
 
 ## My process
 
