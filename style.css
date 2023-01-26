@@ -138,8 +138,13 @@ main {
   height: 2.5rem;
 }
 
-.notification-text span:first-child {
+.notification-text p span:first-child {
   margin-right: 0.25rem;
+  margin-left: 0px !important;
+}
+
+.notification-text p span:last-child {
+  margin-left: 0.25rem;
 }
 
 .message {
