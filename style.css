@@ -54,14 +54,14 @@
 }
 
 body {
-  background-color: var(--light-gray-blue-3);
+  background-color: #f9fafe;
   display: grid;
   place-items: center;
 }
 
 p,
 span,
-h3 {
+h2 {
   font-size: 1rem;
 }
 
@@ -107,7 +107,7 @@ main {
 .notifications {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .notification {
@@ -116,12 +116,6 @@ main {
   padding: 1rem;
   gap: 1rem;
   border-radius: 10px;
-  border: 1px solid var(--white);
-}
-
-.notification:hover {
-  border-color: var(--light-gray-blue-2);
-  cursor: pointer;
 }
 
 .new {
@@ -156,10 +150,30 @@ main {
   color: var(--dark-blue-1);
 }
 
+.message:hover {
+  cursor: pointer;
+  background-color: var(--light-gray-blue-1);
+}
+
+.active:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
 .notifications-picture {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.notifications-picture img {
+  border: 2px solid var(--white);
+  border-radius: 6px;
+}
+
+.notifications-picture img:hover {
+  cursor: pointer;
+  border-color: var(--light-gray-blue-1);
 }
 
 footer {
@@ -179,7 +193,7 @@ footer a {
 
   p,
   span,
-  h3 {
+  h2 {
     font-size: 0.8rem;
   }
 
