@@ -19,7 +19,6 @@
   padding: 0px;
   margin: 0px;
   font-family: "Plus Jakarta Sans";
-  font-size: 1rem;
 }
 
 .fw-400 {
@@ -58,6 +57,12 @@ body {
   background-color: var(--light-gray-blue-3);
 }
 
+p,
+span,
+h3 {
+  font-size: 1rem;
+}
+
 main {
   padding: 2rem;
   max-width: 650px;
@@ -68,28 +73,29 @@ main {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
   align-items: center;
+  justify-items: end;
+  gap: 0.25rem;
   margin-bottom: 2rem;
 }
 
-.header-title h1 {
+.header h1 {
   font-size: 1.5rem;
 }
 
-.header-title span {
+.header span {
   color: var(--white);
   background-color: var(--blue);
   padding: 2px 10px;
   border-radius: 4px;
-  margin-left: 0.25rem;
 }
 
 #mark {
   cursor: pointer;
-  font-size: 1rem;
   color: var(--dark-blue-1);
+  justify-self: end;
 }
 
 #mark:hover {
@@ -164,12 +170,23 @@ footer a {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   body {
     background-color: var(--white);
   }
 
+  p,
+  span,
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .header-title h1 {
+    font-size: 1.25rem;
+  }
+
   main {
+    padding: 1rem;
     margin: 0px;
     border-radius: 0px;
     box-shadow: none;
