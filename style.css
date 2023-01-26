@@ -55,6 +55,8 @@
 
 body {
   background-color: var(--light-gray-blue-3);
+  display: grid;
+  place-items: center;
 }
 
 p,
@@ -68,7 +70,7 @@ main {
   max-width: 650px;
   border-radius: 1rem;
   background-color: white;
-  margin: 3rem auto;
+  margin: 3rem 0;
   box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.05);
 }
 
